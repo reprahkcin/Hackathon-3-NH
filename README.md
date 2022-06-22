@@ -25,3 +25,9 @@ I would like to make a shop calculator mobile app that will calculate and track 
 
 - I hope to build this in Vue, mobile-first. Ideally it's a large button app that can be used at the machine.
 - For the graphic, I will attempt to put something together in with p5.js, but if I can't get that working in a day or so, I will switch to SVG or HTML canvas.
+
+## Dev Journal
+
+### Day 1 (Tuesday)
+
+I was able to get a vue project set up with all the inputs and buttons I intend to use. I'm having a little trouble with the calculations currently. It doesn't seem like Javascript is the greatest language for a calculator. I'm getting some mathematical noise, and rounding errors are creeping into my calculations. This is affecting some of my conditional logic. 
