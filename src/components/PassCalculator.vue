@@ -22,7 +22,7 @@
             <div class="col-4">
               <div class="card d-flex align-items-center h-100">
                 <div class="card-header w-100">
-                  <p>Current Diameter</p>
+                  <p class="my-auto">Current Diameter</p>
                 </div>
                 <div class="card-body">
                   <p class="my-auto fw-bold fs-1">{{ currentDiameter }}"</p>
@@ -34,28 +34,28 @@
                 <div class="col-12 mb-1">
                   <div class="btn-group h-100 w-100 gap-1">
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addCurrentDiameter(1)"
                     >
                       <p class="fw-bold my-auto">1</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addCurrentDiameter(0.1)"
                     >
                       <p class="fw-bold my-auto">.1</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addCurrentDiameter(0.01)"
                     >
                       <p class="fw-bold my-auto">.01</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addCurrentDiameter(0.001)"
                     >
                       <p class="fw-bold my-auto">.001</p>
@@ -66,28 +66,28 @@
                 <div class="col-12">
                   <div class="btn-group h-100 w-100 gap-1">
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractCurrentDiameter(1)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">1</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractCurrentDiameter(0.1)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">.1</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractCurrentDiameter(0.01)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">.01</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractCurrentDiameter(0.001)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
@@ -102,7 +102,7 @@
             <div class="col-4">
               <div class="card d-flex align-items-center h-100 p-0">
                 <div class="card-header w-100">
-                  <p>Target Diameter</p>
+                  <p class="my-auto">Target Diameter</p>
                 </div>
                 <div class="card-body">
                   <p class="my-auto fw-bold fs-1">{{ targetDiameter }}"</p>
@@ -114,28 +114,28 @@
                 <div class="col-12 mb-1">
                   <div class="btn-group h-100 w-100 gap-1">
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addTargetDiameter(1)"
                     >
                       <p class="fw-bold my-auto">1</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addTargetDiameter(0.1)"
                     >
                       <p class="fw-bold my-auto">.1</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addTargetDiameter(0.01)"
                     >
                       <p class="fw-bold my-auto">.01</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addTargetDiameter(0.001)"
                     >
                       <p class="fw-bold my-auto">.001</p>
@@ -146,28 +146,28 @@
                 <div class="col-12">
                   <div class="btn-group h-100 w-100 gap-1">
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractTargetDiameter(1)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">1</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractTargetDiameter(0.1)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">.1</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractTargetDiameter(0.01)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">.01</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractTargetDiameter(0.001)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
@@ -183,13 +183,13 @@
               <div class="card d-flex align-items-center h-100 p-0">
                 <div class="card-header w-100">
                   <p class="my-auto">Depth of Cut</p>
-                  <p class="my-auto">--</p>
+                  <p class="my-auto text-center">--</p>
                   <p class="my-auto">Material Removed</p>
                 </div>
                 <div class="card-body">
                   <p class="my-auto fw-bold fs-1">{{ depthOfCut }}"</p>
-                  <p class="my-auto">--</p>
-                  <p class="my-auto fw-bold fs-1">{{ materialRemoved }}</p>
+                  <p class="my-auto text-center">--</p>
+                  <p class="my-auto fw-bold fs-1">{{ materialRemoved }}"</p>
                 </div>
               </div>
             </div>
@@ -197,29 +197,26 @@
               <div class="row h-100">
                 <div class="col-12 mb-1">
                   <div class="btn-group h-100 w-100 gap-1">
-                    <div
-                      class="btn btn-success incrementButton"
-                      @click="addDepthOfCut(1)"
-                    >
+                    <div class="btn btn-success w-25" @click="addDepthOfCut(1)">
                       <p class="fw-bold my-auto">1</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addDepthOfCut(0.1)"
                     >
                       <p class="fw-bold my-auto">.1</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addDepthOfCut(0.01)"
                     >
                       <p class="fw-bold my-auto">.01</p>
                       <p class="fw-bold my-auto fs-1">+</p>
                     </div>
                     <div
-                      class="btn btn-success incrementButton"
+                      class="btn btn-success w-25"
                       @click="addDepthOfCut(0.001)"
                     >
                       <p class="fw-bold my-auto">.001</p>
@@ -230,28 +227,28 @@
                 <div class="col-12">
                   <div class="btn-group h-100 w-100 gap-1">
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractDepthOfCut(1)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">1</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractDepthOfCut(0.1)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">.1</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractDepthOfCut(0.01)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
                       <p class="fw-bold my-auto">.01</p>
                     </div>
                     <div
-                      class="btn btn-danger incrementButton"
+                      class="btn btn-danger w-25"
                       @click="subtractDepthOfCut(0.001)"
                     >
                       <p class="fw-bold my-auto fs-1">-</p>
@@ -263,26 +260,31 @@
             </div>
           </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer pb-4">
           <div class="row p-2">
-            <div class="col">
+            <div class="col-6">
               <div class="card h-100">
                 <div class="card-header"># Roughing Passes</div>
-                <p class="fw-bold fs-1 text-center">{{ numberPasses }}</p>
+                <p class="fw-bold fs-1 text-center my-auto">
+                  {{ numberPasses }}
+                </p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-6">
               <div class="card h-100">
-                <div class="card-header">Stock to Remove</div>
-                <p class="fw-bold fs-1 text-center">{{ stockToRemove }}"</p>
+                <div class="card-header">Stock left to Remove</div>
+                <p class="fw-bold fs-1 text-center my-auto">
+                  {{ stockToRemove }}"
+                </p>
               </div>
             </div>
             <div class="col">
               <button
-                class="btn btn-success btn-lg m-0 w-100 h-100 fw-bold fs-1"
+                class="btn btn-success btn-lg mt-3 w-100 h-100 fw-bold fs-1"
                 @click="completePass()"
               >
-                Complete Pass
+                <p>Complete Pass</p>
+                <p>{{ timeElapsedInMinutesAndSeconds }}</p>
               </button>
             </div>
           </div>
@@ -299,7 +301,9 @@ export default {
     return {
       currentDiameter: 0,
       targetDiameter: 0,
-      depthOfCut: 0.01
+      depthOfCut: 0.01,
+      timeSinceLastButtonPress: 0,
+      timer: null
     }
   },
   computed: {
@@ -311,6 +315,14 @@ export default {
     },
     materialRemoved: function () {
       return Math.round(this.depthOfCut * 2 * 1000) / 1000
+    },
+    timeElapsedInMinutesAndSeconds: function () {
+      let minutes = Math.floor(this.timeSinceLastButtonPress / 60)
+      let seconds = Math.floor(this.timeSinceLastButtonPress % 60)
+      if (seconds < 10) {
+        seconds = '0' + seconds
+      }
+      return `${minutes}:${seconds}`
     }
   },
   methods: {
@@ -359,11 +371,20 @@ export default {
         console.log('Turning')
         this.subtractCurrentDiameter(this.depthOfCut * 2)
       }
+      // stop the timer
+      clearInterval(this.timer)
+      this.timeSinceLastButtonPress = 0
+      // start timer
+      this.timer = setInterval(() => {
+        this.timeSinceLastButtonPress++
+      }, 1000)
     },
     resetCalculator() {
       this.currentDiameter = 0
       this.targetDiameter = 0
-      this.depthOfCut = 0
+      this.depthOfCut = 0.01
+      this.timeSinceLastButtonPress = 0
+      clearInterval(this.timer)
     },
     operationType() {
       if (this.currentDiameter > this.targetDiameter) {
@@ -375,8 +396,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.incrementButton {
-  width: 25%;
-}
-</style>
